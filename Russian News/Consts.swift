@@ -12,7 +12,7 @@ class Consts {
 	let cellID = "Cell"
 	let toDescription = "toDescription"
 	let itemsPerRow: CGFloat = 1
-	var sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+	var sectionInserts = UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20)
 	let urlString = "https://newsapi.org/v2/top-headlines?country=ru&apiKey=38cb788a96184c2e92b3d0f803e0b3c4"
 }
 

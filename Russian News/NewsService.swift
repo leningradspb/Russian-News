@@ -8,12 +8,16 @@
 
 import Foundation
 
-class NewsService {
+final class NewsService {
 
 	var newsModel: NewsModel?
 
 	var newsCount: Int {
 		newsModel?.articles.count ?? 0
+	}
+
+	func getNews(indexPath: IndexPath) -> News? {
+		return newsModel?.articles[indexPath.row]
 	}
 
 	func requestNews(completion: @escaping () -> Void) {

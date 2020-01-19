@@ -122,26 +122,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="413" height="338"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VWZ-Rv-C9I">
-                                                    <rect key="frame" x="27" y="13" width="359" height="322"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VWZ-Rv-C9I">
+                                                    <rect key="frame" x="20.5" y="5" width="372" height="328"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="FTq-Q1-ESi">
-                                                    <rect key="frame" x="48" y="225" width="317" height="89"/>
+                                                    <rect key="frame" x="19" y="230" width="375.5" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="PcN-Qu-vhA"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="FTq-Q1-ESi" secondAttribute="bottom" constant="16" id="IU1-8W-oSY"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="FTq-Q1-ESi" secondAttribute="trailing" constant="40" id="OvO-xQ-AnK"/>
-                                                <constraint firstItem="VWZ-Rv-C9I" firstAttribute="leading" secondItem="TFI-SL-fZa" secondAttribute="leadingMargin" constant="19" id="YSf-rd-eXb"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="VWZ-Rv-C9I" secondAttribute="trailing" constant="19" id="cw0-I5-JNo"/>
-                                                <constraint firstItem="FTq-Q1-ESi" firstAttribute="leading" secondItem="TFI-SL-fZa" secondAttribute="leadingMargin" constant="40" id="kSO-ac-Nq2"/>
-                                                <constraint firstItem="FTq-Q1-ESi" firstAttribute="top" secondItem="TFI-SL-fZa" secondAttribute="topMargin" constant="217" id="u6s-4I-H7E"/>
-                                                <constraint firstItem="VWZ-Rv-C9I" firstAttribute="top" secondItem="TFI-SL-fZa" secondAttribute="topMargin" constant="5" id="wlJ-kF-zX7"/>
-                                                <constraint firstItem="VWZ-Rv-C9I" firstAttribute="bottom" secondItem="TFI-SL-fZa" secondAttribute="bottomMargin" constant="5" id="zsB-Cc-has"/>
+                                                <constraint firstItem="FTq-Q1-ESi" firstAttribute="bottom" secondItem="TFI-SL-fZa" secondAttribute="bottomMargin" id="N70-CE-wfv"/>
+                                                <constraint firstItem="xCG-1F-n7z" firstAttribute="bottom" secondItem="VWZ-Rv-C9I" secondAttribute="bottom" constant="5" id="Zwp-gl-km4"/>
+                                                <constraint firstItem="VWZ-Rv-C9I" firstAttribute="top" secondItem="xCG-1F-n7z" secondAttribute="top" constant="5" id="beI-L6-jFZ"/>
+                                                <constraint firstItem="VWZ-Rv-C9I" firstAttribute="width" secondItem="TFI-SL-fZa" secondAttribute="width" multiplier="0.9" id="lMJ-vZ-fRE"/>
+                                                <constraint firstItem="FTq-Q1-ESi" firstAttribute="leading" secondItem="xCG-1F-n7z" secondAttribute="leading" constant="19" id="sLB-Si-3u2"/>
+                                                <constraint firstItem="xCG-1F-n7z" firstAttribute="trailing" secondItem="FTq-Q1-ESi" secondAttribute="trailing" constant="19" id="t3A-rT-1nO"/>
+                                                <constraint firstItem="VWZ-Rv-C9I" firstAttribute="centerX" secondItem="TFI-SL-fZa" secondAttribute="centerX" id="uRY-FD-HcJ"/>
                                             </constraints>
+                                            <viewLayoutGuide key="safeArea" id="xCG-1F-n7z"/>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="413" height="338"/>
                                         <connections>
@@ -220,6 +225,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Alb-3r-sWQ"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ESh-RO-jSv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
