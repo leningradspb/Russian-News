@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		26310F8023D47A4800140BB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26310F7F23D47A4800140BB1 /* AppDelegate.swift */; };
 		26310F8223D47A4800140BB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26310F8123D47A4800140BB1 /* SceneDelegate.swift */; };
-		26310F8423D47A4800140BB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26310F8323D47A4800140BB1 /* ViewController.swift */; };
+		26310F8423D47A4800140BB1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26310F8323D47A4800140BB1 /* MainVC.swift */; };
 		26310F8723D47A4800140BB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26310F8523D47A4800140BB1 /* Main.storyboard */; };
 		26310F8A23D47A4800140BB1 /* Russian_News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26310F8823D47A4800140BB1 /* Russian_News.xcdatamodeld */; };
 		26310F8C23D47A4B00140BB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26310F8B23D47A4B00140BB1 /* Assets.xcassets */; };
 		26310F8F23D47A4B00140BB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26310F8D23D47A4B00140BB1 /* LaunchScreen.storyboard */; };
+		26310F9823D47A7600140BB1 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26310F9723D47A7600140BB1 /* NewsModel.swift */; };
+		26310F9B23D47AB500140BB1 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26310F9A23D47AB500140BB1 /* NewsService.swift */; };
+		26310F9D23D47B2400140BB1 /* 18094.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26310F9C23D47B2400140BB1 /* 18094.ttf */; };
+		26310F9F23D47BAD00140BB1 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26310F9E23D47BAD00140BB1 /* Consts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26310F7C23D47A4800140BB1 /* Russian News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Russian News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26310F7F23D47A4800140BB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26310F8123D47A4800140BB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26310F8323D47A4800140BB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26310F8323D47A4800140BB1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		26310F8623D47A4800140BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26310F8923D47A4800140BB1 /* Russian_News.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Russian_News.xcdatamodel; sourceTree = "<group>"; };
 		26310F8B23D47A4B00140BB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26310F8E23D47A4B00140BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26310F9023D47A4B00140BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26310F9723D47A7600140BB1 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		26310F9A23D47AB500140BB1 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		26310F9C23D47B2400140BB1 /* 18094.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 18094.ttf; sourceTree = "<group>"; };
+		26310F9E23D47BAD00140BB1 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +68,34 @@
 			children = (
 				26310F7F23D47A4800140BB1 /* AppDelegate.swift */,
 				26310F8123D47A4800140BB1 /* SceneDelegate.swift */,
-				26310F8323D47A4800140BB1 /* ViewController.swift */,
+				26310F9923D47A8500140BB1 /* Model */,
+				26310F9623D47A6200140BB1 /* Controllers */,
+				26310F9A23D47AB500140BB1 /* NewsService.swift */,
 				26310F8523D47A4800140BB1 /* Main.storyboard */,
+				26310F9C23D47B2400140BB1 /* 18094.ttf */,
 				26310F8B23D47A4B00140BB1 /* Assets.xcassets */,
 				26310F8D23D47A4B00140BB1 /* LaunchScreen.storyboard */,
 				26310F9023D47A4B00140BB1 /* Info.plist */,
 				26310F8823D47A4800140BB1 /* Russian_News.xcdatamodeld */,
+				26310F9E23D47BAD00140BB1 /* Consts.swift */,
 			);
 			path = "Russian News";
+			sourceTree = "<group>";
+		};
+		26310F9623D47A6200140BB1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26310F8323D47A4800140BB1 /* MainVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		26310F9923D47A8500140BB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26310F9723D47A7600140BB1 /* NewsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +159,7 @@
 				26310F8F23D47A4B00140BB1 /* LaunchScreen.storyboard in Resources */,
 				26310F8C23D47A4B00140BB1 /* Assets.xcassets in Resources */,
 				26310F8723D47A4800140BB1 /* Main.storyboard in Resources */,
+				26310F9D23D47B2400140BB1 /* 18094.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26310F8423D47A4800140BB1 /* ViewController.swift in Sources */,
+				26310F8423D47A4800140BB1 /* MainVC.swift in Sources */,
 				26310F8023D47A4800140BB1 /* AppDelegate.swift in Sources */,
 				26310F8A23D47A4800140BB1 /* Russian_News.xcdatamodeld in Sources */,
 				26310F8223D47A4800140BB1 /* SceneDelegate.swift in Sources */,
+				26310F9F23D47BAD00140BB1 /* Consts.swift in Sources */,
+				26310F9823D47A7600140BB1 /* NewsModel.swift in Sources */,
+				26310F9B23D47AB500140BB1 /* NewsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Russian News/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Russian News/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

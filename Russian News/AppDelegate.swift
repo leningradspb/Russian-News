@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		
+		UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().barTintColor = .black
+        UITabBar.appearance().barTintColor = .black
+        UITabBar.appearance().tintColor = .red
+        UITabBar.appearance().unselectedItemTintColor = .gray
+		UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "mr_ITCSerifGothic", size: 15)!], for: .normal)
+		UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "mr_ITCSerifGothic", size: 15)!], for: .selected)
 		return true
 	}
 
