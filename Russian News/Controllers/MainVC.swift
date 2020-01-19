@@ -31,8 +31,8 @@ class MainVC: UIViewController {
 	private func setupCollectionView() {
 		collectionView.delegate = self
 		collectionView.dataSource = self
-		collectionView.layoutMargins = UIEdgeInsets(top: 5, left: 19, bottom: 5, right: 19)
-		collectionView.contentInsetAdjustmentBehavior = .automatic
+		//collectionView.layoutMargins = UIEdgeInsets(top: 5, left: 19, bottom: 5, right: 19)
+		//collectionView.contentInsetAdjustmentBehavior = .automatic
 	}
 
 	private func requestNews() {
@@ -114,22 +114,22 @@ extension MainVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
 		let paddigSpace = Consts().sectionInserts.left * (Consts().itemsPerRow)
-        let avaliableWidth = view.bounds.width - paddigSpace
-        let avalibleHeight = (view.bounds.height - paddigSpace) / 2
+        let avaliableWidth = view.frame.width - paddigSpace
+        let avalibleHeight = (view.frame.height - paddigSpace) / 2
         let widthPerItem = avaliableWidth / Consts().itemsPerRow
         let height = CGFloat(avalibleHeight) * widthPerItem / CGFloat(avaliableWidth)
 
         return CGSize(width: widthPerItem, height: height)
     }
 
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//
-//        return Consts().sectionInserts
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//
-//        return Consts().sectionInserts.left
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+
+        return UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+
+        return 5
+    }
 	
 }
