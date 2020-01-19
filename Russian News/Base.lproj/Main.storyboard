@@ -25,14 +25,14 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="zyb-64-wAL">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="zyb-64-wAL">
                                 <rect key="frame" x="0.0" y="93" width="414" height="86"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="left" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="l5o-Ee-6Aa">
-                                        <rect key="frame" x="0.0" y="0.0" width="306" height="40"/>
+                                    <stackView opaque="NO" contentMode="left" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="l5o-Ee-6Aa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0F-Ha-WUC">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="122" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Бизнес">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,7 +42,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6T-1K-uZL">
-                                                <rect key="frame" x="90" y="0.0" width="79" height="40"/>
+                                                <rect key="frame" x="122" y="0.0" width="106.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Спорт">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,7 +52,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cs-6g-2kQ">
-                                                <rect key="frame" x="169" y="0.0" width="137" height="40"/>
+                                                <rect key="frame" x="228.5" y="0.0" width="185.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Технологии">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,11 +64,11 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="center" distribution="fillProportionally" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-q1-plI">
-                                        <rect key="frame" x="0.0" y="46" width="306" height="40"/>
+                                    <stackView opaque="NO" contentMode="center" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-q1-plI">
+                                        <rect key="frame" x="0.0" y="46" width="414" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmP-pK-amG">
-                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="176.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Здоровье">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -78,7 +78,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUl-bi-gfF">
-                                                <rect key="frame" x="130.5" y="0.0" width="92.5" height="40"/>
+                                                <rect key="frame" x="176.5" y="0.0" width="125" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Наука">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,7 +88,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuS-im-tKU">
-                                                <rect key="frame" x="223" y="0.0" width="83" height="40"/>
+                                                <rect key="frame" x="301.5" y="0.0" width="112.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Досуг">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -125,48 +125,48 @@
                                 <rect key="frame" x="0.0" y="194" width="414" height="614"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0ok-5z-a2u">
-                                    <size key="itemSize" width="340" height="273"/>
+                                    <size key="itemSize" width="350" height="413"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gqJ-xb-Br0" customClass="NewsCollectionViewCell" customModule="Russian_News" customModuleProvider="target">
-                                        <rect key="frame" x="37" y="0.0" width="340" height="273"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="9va-8k-7qs" customClass="NewsCollectionViewCell" customModule="Russian_News" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="0.0" width="350" height="413"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="K04-y6-Lb3">
-                                            <rect key="frame" x="0.0" y="0.0" width="340" height="273"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gZh-fe-ojd">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="413"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="XWN-wI-FXV">
-                                                    <rect key="frame" x="8" y="8" width="324" height="257"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="ymi-JX-sqD">
-                                                    <rect key="frame" x="21" y="191" width="292" height="64"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P05-oD-Jd4">
+                                                    <rect key="frame" x="8" y="8" width="334" height="397"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="64" id="wHi-Oh-oK1"/>
+                                                        <constraint firstAttribute="height" constant="397" id="1QX-y8-alb"/>
+                                                        <constraint firstAttribute="width" constant="334" id="Ms0-jt-Nrg"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="lwk-ld-9fR">
+                                                    <rect key="frame" x="13" y="300" width="334" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="b0y-RN-5NX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="25"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ymi-JX-sqD" secondAttribute="trailing" constant="19" id="ERd-bN-cKE"/>
-                                                <constraint firstItem="ymi-JX-sqD" firstAttribute="leading" secondItem="K04-y6-Lb3" secondAttribute="leadingMargin" constant="13" id="F2c-eF-qB5"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ymi-JX-sqD" secondAttribute="bottom" constant="10" id="Hz8-Xa-cQo"/>
-                                                <constraint firstItem="XWN-wI-FXV" firstAttribute="bottom" secondItem="K04-y6-Lb3" secondAttribute="bottomMargin" id="asS-X4-gfV"/>
-                                                <constraint firstItem="XWN-wI-FXV" firstAttribute="leading" secondItem="K04-y6-Lb3" secondAttribute="leadingMargin" id="iiD-nt-IdY"/>
-                                                <constraint firstItem="XWN-wI-FXV" firstAttribute="top" secondItem="K04-y6-Lb3" secondAttribute="topMargin" id="nBA-z9-tOD"/>
-                                                <constraint firstItem="XWN-wI-FXV" firstAttribute="trailing" secondItem="K04-y6-Lb3" secondAttribute="trailingMargin" id="qc8-y9-1rf"/>
+                                                <constraint firstItem="lwk-ld-9fR" firstAttribute="leading" secondItem="gZh-fe-ojd" secondAttribute="leadingMargin" constant="5" id="4a5-5x-p7F"/>
+                                                <constraint firstItem="P05-oD-Jd4" firstAttribute="top" secondItem="gZh-fe-ojd" secondAttribute="topMargin" id="Pqa-ml-Rlj"/>
+                                                <constraint firstItem="P05-oD-Jd4" firstAttribute="centerX" secondItem="gZh-fe-ojd" secondAttribute="centerX" id="rmz-Ls-XdB"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lwk-ld-9fR" secondAttribute="bottom" constant="5" id="rzG-Ta-B0a"/>
+                                                <constraint firstItem="lwk-ld-9fR" firstAttribute="trailing" secondItem="gZh-fe-ojd" secondAttribute="trailingMargin" constant="5" id="whU-DY-yK1"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="340" height="273"/>
+                                        <size key="customSize" width="350" height="413"/>
                                         <connections>
-                                            <outlet property="cellImageView" destination="XWN-wI-FXV" id="oh1-1O-yLj"/>
-                                            <outlet property="cellLabel" destination="ymi-JX-sqD" id="d9b-vF-iOx"/>
+                                            <outlet property="cellImageView" destination="P05-oD-Jd4" id="r1y-x6-mO2"/>
+                                            <outlet property="cellLabel" destination="lwk-ld-9fR" id="dBn-W7-u3b"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

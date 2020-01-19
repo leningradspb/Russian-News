@@ -100,11 +100,16 @@ class MainVC: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+		requestNews()
 		setupNavigationTitle()
 		setupCollectionView()
-		requestNews()
+
 		//setupRefresh()
+	}
+
+	override func viewWillAppear(_ animated: Bool) {
+		sleep(2)
+		self.collectionView.reloadData()
 	}
 
 	private func setupNavigationTitle() {
@@ -114,15 +119,18 @@ class MainVC: UIViewController {
 	private func setupCollectionView() {
 		collectionView.delegate = self
 		collectionView.dataSource = self
-		//collectionView.layoutMargins = UIEdgeInsets(top: 5, left: 19, bottom: 5, right: 19)
-		//collectionView.contentInsetAdjustmentBehavior = .automatic
+		collectionView.layoutMargins = UIEdgeInsets(top: 10, left: 19, bottom: 10, right: 19)
+		collectionView.contentInsetAdjustmentBehavior = .automatic
 	}
 
 	private func requestNews() {
 		newsService.requestNews(category: URLStringEnum.main.rawValue) { [weak self] in
 			guard let self = self else { return }
 			DispatchQueue.main.async {
+				//sleep(1)
 				self.collectionView.reloadData()
+//				self.collectionView.layoutMargins = UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20)
+//				self.collectionView.contentInsetAdjustmentBehavior = .automatic
 			}
 		}
 	}
@@ -175,7 +183,6 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource {
 				guard let data = data else {return}
 
 				DispatchQueue.main.async {
-					//self.images.append(UIImage(data: data)!)
 					cell.cellImageView.image = UIImage(data: data)
 				}
 
