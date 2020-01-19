@@ -25,11 +25,11 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="zyb-64-wAL">
-                                <rect key="frame" x="0.0" y="93" width="414" height="94"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="zyb-64-wAL">
+                                <rect key="frame" x="0.0" y="93" width="414" height="86"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="left" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="l5o-Ee-6Aa">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="306" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0F-Ha-WUC">
                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
@@ -37,53 +37,65 @@
                                                 <state key="normal" title="#Бизнес">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="businessTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LFT-mf-y9i"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6T-1K-uZL">
-                                                <rect key="frame" x="144" y="0.0" width="79" height="40"/>
+                                                <rect key="frame" x="90" y="0.0" width="79" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Спорт">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="sportTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2L-Be-r9g"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cs-6g-2kQ">
-                                                <rect key="frame" x="277" y="0.0" width="137" height="40"/>
+                                                <rect key="frame" x="169" y="0.0" width="137" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Технологии">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="technologyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7R-JH-dc4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="left" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-q1-plI">
-                                        <rect key="frame" x="0.0" y="54" width="414" height="40"/>
+                                    <stackView opaque="NO" contentMode="center" distribution="fillProportionally" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-q1-plI">
+                                        <rect key="frame" x="0.0" y="46" width="306" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmP-pK-amG">
-                                                <rect key="frame" x="0.0" y="0.0" width="176.5" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmP-pK-amG">
+                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Здоровье">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="healthTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6y-Dz-7Xx"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUl-bi-gfF">
-                                                <rect key="frame" x="176.5" y="0.0" width="125" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="125" id="8mW-qx-sjE"/>
-                                                </constraints>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUl-bi-gfF">
+                                                <rect key="frame" x="130.5" y="0.0" width="92.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Наука">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="scienceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3VM-CD-H68"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuS-im-tKU">
-                                                <rect key="frame" x="301.5" y="0.0" width="112.5" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="112.5" id="eS4-a0-uXO"/>
-                                                </constraints>
+                                                <rect key="frame" x="223" y="0.0" width="83" height="40"/>
                                                 <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                 <state key="normal" title="#Досуг">
                                                     <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="entartamentTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I86-eA-xIY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,14 +115,14 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5o-rM-ub1" userLabel="SeparatorView">
-                                <rect key="frame" x="0.0" y="187" width="414" height="5"/>
+                                <rect key="frame" x="0.0" y="179" width="414" height="5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="5" id="tTR-dU-ERX"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MCK-HR-hKv">
-                                <rect key="frame" x="0.0" y="202" width="414" height="606"/>
+                                <rect key="frame" x="0.0" y="194" width="414" height="614"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0ok-5z-a2u">
                                     <size key="itemSize" width="340" height="273"/>
@@ -126,17 +138,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="340" height="273"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="XWN-wI-FXV">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="XWN-wI-FXV">
                                                     <rect key="frame" x="8" y="8" width="324" height="257"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ymi-JX-sqD">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" id="ymi-JX-sqD">
                                                     <rect key="frame" x="21" y="191" width="292" height="64"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="64" id="wHi-Oh-oK1"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -188,7 +200,13 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="ГЛАВНОЕ" id="2J6-o9-t3Z"/>
                     <connections>
+                        <outlet property="business" destination="u0F-Ha-WUC" id="jm4-K6-FMY"/>
                         <outlet property="collectionView" destination="MCK-HR-hKv" id="RJD-Yn-Wyl"/>
+                        <outlet property="entertament" destination="EuS-im-tKU" id="5kc-sm-oZk"/>
+                        <outlet property="health" destination="WmP-pK-amG" id="KRq-B1-nLp"/>
+                        <outlet property="science" destination="qUl-bi-gfF" id="7gL-Ql-zFY"/>
+                        <outlet property="sport" destination="w6T-1K-uZL" id="6Zt-wB-BE8"/>
+                        <outlet property="technology" destination="9Cs-6g-2kQ" id="fRT-ws-Kbg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

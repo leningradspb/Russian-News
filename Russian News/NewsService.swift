@@ -20,8 +20,8 @@ final class NewsService {
 		return newsModel?.articles[indexPath.row]
 	}
 
-	func requestNews(completion: @escaping () -> Void) {
-		guard let url = URL(string: Consts().urlString) else {return}
+	func requestNews(category: String, completion: @escaping () -> Void) {
+		guard let url = URL(string: category) else {return}
 
 		var request = URLRequest(url: url)
 

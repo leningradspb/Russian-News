@@ -15,13 +15,96 @@ class MainVC: UIViewController {
 	private var refreshControl = UIRefreshControl()
 	@IBOutlet weak var collectionView: UICollectionView!
 	
+	@IBOutlet weak var sport: UIButton!
+	@IBAction func sportTapped(_ sender: UIButton) {
+		setDefaultsButtonsAppearance()
+		sport.backgroundColor = .white
+		sport.setTitleColor(.black, for: .normal)
+		newsService.requestNews(category: URLStringEnum.sports.rawValue) { [weak self] in
+			guard let self = self else { return }
+			DispatchQueue.main.async {
+				self.collectionView.reloadData()
+			}
+		}
+	}
+	@IBOutlet weak var business: UIButton!
+
+	@IBAction func businessTapped(_ sender: UIButton) {
+		setDefaultsButtonsAppearance()
+		business.backgroundColor = .white
+		business.setTitleColor(.black, for: .normal)
+
+		newsService.requestNews(category: URLStringEnum.business.rawValue) { [weak self] in
+			guard let self = self else { return }
+			DispatchQueue.main.async {
+				self.collectionView.reloadData()
+			}
+		}
+
+	}
+
+	@IBOutlet weak var technology: UIButton!
+
+	@IBAction func technologyTapped(_ sender: UIButton) {
+		setDefaultsButtonsAppearance()
+		technology.backgroundColor = .white
+		technology.setTitleColor(.black, for: .normal)
+		newsService.requestNews(category: URLStringEnum.technology.rawValue) { [weak self] in
+			guard let self = self else { return }
+			DispatchQueue.main.async {
+				self.collectionView.reloadData()
+			}
+		}
+	}
+
+	@IBOutlet weak var health: UIButton!
+	@IBAction func healthTapped(_ sender: UIButton) {
+		setDefaultsButtonsAppearance()
+		health.backgroundColor = .white
+		health.setTitleColor(.black, for: .normal)
+		newsService.requestNews(category: URLStringEnum.health.rawValue) { [weak self] in
+			guard let self = self else { return }
+			DispatchQueue.main.async {
+				self.collectionView.reloadData()
+			}
+		}
+	}
+
+	@IBOutlet weak var science: UIButton!
+
+	@IBAction func scienceTapped(_ sender: UIButton) {
+		setDefaultsButtonsAppearance()
+		science.backgroundColor = .white
+		science.setTitleColor(.black, for: .normal)
+		newsService.requestNews(category: URLStringEnum.science.rawValue) { [weak self] in
+			guard let self = self else { return }
+			DispatchQueue.main.async {
+				self.collectionView.reloadData()
+			}
+		}
+	}
+
+
+	@IBOutlet weak var entertament: UIButton!
+	@IBAction func entartamentTapped(_ sender: UIButton) {
+		setDefaultsButtonsAppearance()
+		entertament.backgroundColor = .white
+		entertament.setTitleColor(.black, for: .normal)
+		newsService.requestNews(category: URLStringEnum.entertainment.rawValue) { [weak self] in
+			guard let self = self else { return }
+			DispatchQueue.main.async {
+				self.collectionView.reloadData()
+			}
+		}
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
 		setupNavigationTitle()
 		setupCollectionView()
 		requestNews()
-		setupRefresh()
+		//setupRefresh()
 	}
 
 	private func setupNavigationTitle() {
@@ -36,7 +119,7 @@ class MainVC: UIViewController {
 	}
 
 	private func requestNews() {
-		newsService.requestNews { [weak self] in
+		newsService.requestNews(category: URLStringEnum.main.rawValue) { [weak self] in
 			guard let self = self else { return }
 			DispatchQueue.main.async {
 				self.collectionView.reloadData()
@@ -44,24 +127,19 @@ class MainVC: UIViewController {
 		}
 	}
 
-	private func setupImages(index: IndexPath) {
-		guard let url = URL(string: newsService.newsModel?.articles[index.row].urlToImage ?? "") else { return }
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-
-            if let error = error {
-                print(error)
-                return
-            }
-
-            guard let data = data else {return}
-
-            DispatchQueue.main.async {
-				//self.images.append(UIImage(data: data)!)
-               // cell.imageView.image = UIImage(data: data)
-            }
-
-        }
-        task.resume()
+	private func setDefaultsButtonsAppearance() {
+		health.setTitleColor(.white, for: .normal)
+		health.backgroundColor = .clear
+		science.setTitleColor(.white, for: .normal)
+		science.backgroundColor = .clear
+		sport.setTitleColor(.white, for: .normal)
+		sport.backgroundColor = .clear
+		entertament.setTitleColor(.white, for: .normal)
+		entertament.backgroundColor = .clear
+		business.setTitleColor(.white, for: .normal)
+		business.backgroundColor = .clear
+		technology.setTitleColor(.white, for: .normal)
+		technology.backgroundColor = .clear
 	}
 
 	private func setupRefresh() {

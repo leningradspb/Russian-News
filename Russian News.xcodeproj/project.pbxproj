@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2621593123D4EA01003196FE /* URLStringEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2621593023D4EA01003196FE /* URLStringEnum.swift */; };
 		26310F8023D47A4800140BB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26310F7F23D47A4800140BB1 /* AppDelegate.swift */; };
 		26310F8223D47A4800140BB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26310F8123D47A4800140BB1 /* SceneDelegate.swift */; };
 		26310F8423D47A4800140BB1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26310F8323D47A4800140BB1 /* MainVC.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2621593023D4EA01003196FE /* URLStringEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLStringEnum.swift; sourceTree = "<group>"; };
 		26310F7C23D47A4800140BB1 /* Russian News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Russian News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26310F7F23D47A4800140BB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26310F8123D47A4800140BB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				26310F8823D47A4800140BB1 /* Russian_News.xcdatamodeld */,
 				26310F9E23D47BAD00140BB1 /* Consts.swift */,
 				26310FA023D48F5D00140BB1 /* Extensions.swift */,
+				2621593023D4EA01003196FE /* URLStringEnum.swift */,
 			);
 			path = "Russian News";
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				26310F8A23D47A4800140BB1 /* Russian_News.xcdatamodeld in Sources */,
 				26310FA123D48F5D00140BB1 /* Extensions.swift in Sources */,
 				26310F8223D47A4800140BB1 /* SceneDelegate.swift in Sources */,
+				2621593123D4EA01003196FE /* URLStringEnum.swift in Sources */,
 				26310F9F23D47BAD00140BB1 /* Consts.swift in Sources */,
 				26310F9823D47A7600140BB1 /* NewsModel.swift in Sources */,
 				26310FA423D4A20200140BB1 /* NewsCollectionViewCell.swift in Sources */,
