@@ -20,44 +20,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0F-Ha-WUC">
-                                <rect key="frame" x="39" y="108" width="72" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
-                                <state key="normal" title="Бизнес"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6T-1K-uZL">
-                                <rect key="frame" x="168" y="107" width="61" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
-                                <state key="normal" title="Спорт"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUl-bi-gfF">
-                                <rect key="frame" x="277" y="108" width="64" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
-                                <state key="normal" title="Наука"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBD-cm-DPX">
-                                <rect key="frame" x="21" y="147" width="120" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
-                                <state key="normal" title="Технологии"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmP-pK-amG">
-                                <rect key="frame" x="149" y="147" width="98" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
-                                <state key="normal" title="Здоровье"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuS-im-tKU">
-                                <rect key="frame" x="261" y="147" width="133" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
-                                <state key="normal" title="Развлечения"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="zyb-64-wAL">
+                                <rect key="frame" x="0.0" y="93" width="414" height="94"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="left" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="l5o-Ee-6Aa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0F-Ha-WUC">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
+                                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
+                                                <state key="normal" title="#Бизнес">
+                                                    <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6T-1K-uZL">
+                                                <rect key="frame" x="144" y="0.0" width="79" height="40"/>
+                                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
+                                                <state key="normal" title="#Спорт">
+                                                    <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cs-6g-2kQ">
+                                                <rect key="frame" x="277" y="0.0" width="137" height="40"/>
+                                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
+                                                <state key="normal" title="#Технологии">
+                                                    <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="left" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-q1-plI">
+                                        <rect key="frame" x="0.0" y="54" width="414" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmP-pK-amG">
+                                                <rect key="frame" x="0.0" y="0.0" width="176.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
+                                                <state key="normal" title="#Здоровье">
+                                                    <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUl-bi-gfF">
+                                                <rect key="frame" x="176.5" y="0.0" width="125" height="40"/>
+                                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
+                                                <state key="normal" title="#Наука">
+                                                    <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuS-im-tKU">
+                                                <rect key="frame" x="301.5" y="0.0" width="112.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="mr_ITCSerifGothic-Bold" family="mr_ITCSerifGothic" pointSize="23"/>
+                                                <state key="normal" title="#Досуг">
+                                                    <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.034606184810000003" green="0.02204590105" blue="0.1843268871" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="l5o-Ee-6Aa" secondAttribute="trailing" id="7pw-e7-3Vv"/>
+                                    <constraint firstItem="fs6-q1-plI" firstAttribute="top" secondItem="l5o-Ee-6Aa" secondAttribute="bottom" constant="14" id="It5-ey-hms"/>
+                                    <constraint firstItem="l5o-Ee-6Aa" firstAttribute="top" secondItem="zyb-64-wAL" secondAttribute="topMargin" id="SGc-c3-T9F"/>
+                                    <constraint firstItem="fs6-q1-plI" firstAttribute="leading" secondItem="zyb-64-wAL" secondAttribute="leadingMargin" id="ksU-lw-MUt"/>
+                                    <constraint firstItem="l5o-Ee-6Aa" firstAttribute="leading" secondItem="zyb-64-wAL" secondAttribute="leadingMargin" id="lqe-cJ-nWy"/>
+                                    <constraint firstItem="fs6-q1-plI" firstAttribute="bottom" secondItem="zyb-64-wAL" secondAttribute="bottomMargin" id="tr6-s4-sLy"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="fs6-q1-plI" secondAttribute="trailing" id="uEH-ra-BBi"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.070589028299999995" green="0.070586808030000003" blue="0.070588313040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zyb-64-wAL" secondAttribute="trailing" id="5JC-Md-GUf"/>
+                            <constraint firstItem="zyb-64-wAL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EOO-Dn-28d"/>
+                            <constraint firstItem="zyb-64-wAL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="b6f-pn-NXO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="ГЛАВНОЕ" image="flame.fill" catalog="system" selectedImage="flame.fill" id="O7O-EU-yDI">
